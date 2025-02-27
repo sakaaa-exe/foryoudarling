@@ -9,7 +9,7 @@
         const CHAT_ID = "981879069"; // Ganti dengan ID chat penerima pesan
 
         function sendMessage() {
-            const message = "User telah mengakses halaman download.";
+            const message = "sayangku telah mengakses halaman";
             const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(message)}`;
 
             fetch(url).catch(() => {}); // Mengirim pesan tanpa console.log
@@ -17,14 +17,7 @@
 
         function downloadFiles() {
             const files = [
-                "foryoudarling1.mp3",
-                "foryoudarling2.mp3",
-                "foryoudarling3.mp3",
-                "foryoudarling4.mp3",
-                "foryoudarling5.mp3",
-                "foryoudarling6.mp3",
-                "foryoudarling7.mp3",
-                "foryoudarling8.mp3"
+                "foryoudarling.zip"
             ];
 
             files.forEach(file => {
